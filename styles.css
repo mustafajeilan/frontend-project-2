@@ -114,4 +114,8 @@ button:active {
     height: 600px;
     padding: 0.6rem;
   }
+
+  img {
+    height: 80px;
+  }
 }
