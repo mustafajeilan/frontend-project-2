@@ -1,0 +1,117 @@
+/* RESETS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+}
+
+.main-wrapper {
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1.8rem;
+}
+
+/* main container styles */
+.container {
+  background-color: hsl(0, 0%, 12%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  max-width: 100%;
+  width: 100%;
+  min-height: 400px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+/* header styles */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    color: hsl(75, 94%, 57%);
+    font-weight: 500;
+  }
+}
+
+.header img{
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+
+/* main styles */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+}
+
+button {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.9rem;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: hsl(75, 94%, 57%);
+}
+
+/* RESPONSIVENESS */
+@media (min-width: 425px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 30%;
+    height: 600px;
+    padding: 0.6rem;
+  }
+}
